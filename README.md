@@ -13,6 +13,7 @@ Proyek ini adalah aplikasi web sederhana dengan fitur autentikasi login yang ama
 - **Form Login**: Input Email/Username dan Password dengan validasi format.
 - **Security**: Password disimpan menggunakan enkripsi Bcrypt dan sesi dikelola via HttpOnly Cookie (Aman dari XSS).
 - **Show/Hide Password**: Fitur UI untuk kenyamanan user saat memasukkan kredensial.
+- **Dark Mode Toggle (Bonus)**: Implementasi fitur mode gelap menggunakan Tailwind `class` strategy untuk kenyamanan visual.
 - **Protected Route**: Halaman `/dashboard` diproteksi menggunakan Middleware (tidak bisa diakses tanpa login).
 - **Rate Limiting (Bonus)**: Membatasi maksimal 5 percobaan login per menit untuk mencegah Brute Force.
 - **Animasi Loading (Bonus)**: UX yang halus dengan spinner saat proses autentikasi berlangsung.
