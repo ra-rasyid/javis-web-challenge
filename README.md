@@ -36,7 +36,9 @@ Untuk memenuhi kriteria tantangan dalam waktu 48 jam, saat ini aplikasi mengguna
 
 | Desktop Dashboard | Mobile Dashboard |
 |---|---|
-| ![Desktop](./screenshots/dashboard_web.jpeg) | ![Mobile](./screenshots/dashboard_mobile.jpeg) |
+| ![Desktop](./screenshots/dashboard_web.jpeg) | ![Mobile](./screenshots/dashboard_mobile.jpeg) | 
+
+| ![error](./screenshots/error_web.jpeg) |
 
 ## 🔑 Akun Demo
 - **Email:** admin@javis.com
