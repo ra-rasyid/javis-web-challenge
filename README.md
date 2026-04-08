@@ -18,6 +18,11 @@ Proyek ini adalah aplikasi web sederhana dengan fitur autentikasi login yang ama
 - **Animasi Loading (Bonus)**: UX yang halus dengan spinner saat proses autentikasi berlangsung.
 - **Fitur Logout**: Menghapus sesi secara aman dan mengarahkan kembali ke halaman login.
 
+## 🗄️ Database & Arsitektur
+Untuk memenuhi kriteria tantangan dalam waktu 48 jam, saat ini aplikasi menggunakan **Simulasi Data di sisi Server**. 
+- **Logika Autentikasi**: Tetap menggunakan alur industri (Bcrypt hashing & JWT verification).
+- **Skalabilitas**: Struktur API Route yang dibuat sudah siap (Ready-to-use) untuk dihubungkan ke database MySQL atau Redis menggunakan ORM seperti Prisma atau library mysql2 di tahap pengembangan selanjutnya.
+
 ## 📋 Cara Menjalankan Project
 1. Clone repository ini.
 2. Jalankan perintah `npm install` untuk menginstall dependencies.
