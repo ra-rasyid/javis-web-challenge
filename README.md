@@ -33,16 +33,17 @@ Untuk memenuhi kriteria tantangan dalam waktu 48 jam, saat ini aplikasi mengguna
 ## 📸 Preview UI
 | Desktop Login | Mobile Login |
 |---|---|
-| ![Desktop](./screenshots/login_web.jpeg) | ![Mobile](./screenshots/login_mobile.jpeg) |
+| ![Desktop](./screenshots/web_dashboard.png) | ![Mobile](./screenshots/mobile_login.jpeg) |
 
 | Desktop Dashboard | Mobile Dashboard |
 |---|---|
-| ![Desktop](./screenshots/dashboard_web.jpeg) | ![Mobile](./screenshots/dashboard_mobile.jpeg) | 
+| ![Desktop](./screenshots/web_dark.png) | ![Mobile](./screenshots/mobile_dashboard.jpeg) | 
 
-| ![error](./screenshots/error_web.jpeg) |
+| ![error](./screenshots/web_limit.png) |
 
 ## 🔑 Akun Demo
 - **Email:** admin@javis.com
 - **Password:** password123
 
 **Link Live Demo (Vercel):** [https://javis-web-challenge.vercel.app/login]
+
