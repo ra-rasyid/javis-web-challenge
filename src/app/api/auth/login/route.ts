@@ -1,8 +1,30 @@
 import { NextResponse } from 'next/server';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
+import { LRUCache } from 'lru-cache'; // Import cache untuk simpan data IP
+
+// Setup Cache untuk Rate Limit (Simpan IP selama 1 menit)
+const tokenCache = new LRUCache({
+  max: 500,
+  ttl: 60 * 1000, // 1 Menit
+});
 
 export async function POST(request: Request) {
+  // Ambil IP (simulasi sederhana)
+  const ip = request.headers.get('x-forwarded-for') || '127.0.0.1';
+  const limit = 5; // Batas 5 percobaan
+  const currentUsage = (tokenCache.get(ip) as number) || 0;
+
+  // Cek jika sudah melebihi batas 
+  if (currentUsage >= limit) {
+    return NextResponse.json(
+      { message: "Terlalu banyak percobaan login. Tunggu 1 menit lagi." },
+      { status: 429 }
+    );
+  }
+
+  // Update jumlah percobaan
+  tokenCache.set(ip, currentUsage + 1);
   try {
     const { email, password } = await request.json();
 

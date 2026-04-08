@@ -1,19 +1,22 @@
 # Web Programmer Challenge - PT. Javis Teknologi Albarokah
-Proyek ini adalah aplikasi web sederhana dengan fitur autentikasi login menggunakan Next.js.
+
+Proyek ini adalah aplikasi web sederhana dengan fitur autentikasi login yang aman, dikembangkan sebagai bagian dari Web Programmer Challenge.
 
 ## 🚀 Tech Stack
-- [cite_start]**Frontend & Backend**: Next.js 15 (App Router) [cite: 18, 19]
-- [cite_start]**Styling**: Tailwind CSS (Responsif & Clean UI) [cite: 16]
-- [cite_start]**Authentication**: JSON Web Token (JWT) & HttpOnly Cookie [cite: 22]
-- [cite_start]**Security**: Password Hashing menggunakan Bcrypt [cite: 21]
+- **Frontend & Backend**: Next.js 15 (App Router) - Fullstack Integration
+- **Styling**: Tailwind CSS (Fully Responsive & Clean UI)
+- **Authentication**: JSON Web Token (JWT) & HttpOnly Cookie
+- **Security**: Password Hashing menggunakan Bcrypt & Rate Limiting (LRU Cache)
 - **Icons**: Lucide React
 
-## 🛠️ Fitur
-- [cite_start]Form Login dengan validasi email [cite: 10, 11]
-- [cite_start]Show/Hide Password [cite: 14]
-- [cite_start]Protected Route (Halaman /dashboard tidak bisa diakses tanpa login) [cite: 23]
-- [cite_start]Fitur Logout untuk menghapus sesi [cite: 24]
-- [cite_start]Animasi loading saat proses login [cite: 28]
+## 🛠️ Fitur & Kriteria Tugas
+- **Form Login**: Input Email/Username dan Password dengan validasi format.
+- **Security**: Password disimpan menggunakan enkripsi Bcrypt dan sesi dikelola via HttpOnly Cookie (Aman dari XSS).
+- **Show/Hide Password**: Fitur UI untuk kenyamanan user saat memasukkan kredensial.
+- **Protected Route**: Halaman `/dashboard` diproteksi menggunakan Middleware (tidak bisa diakses tanpa login).
+- **Rate Limiting (Bonus)**: Membatasi maksimal 5 percobaan login per menit untuk mencegah Brute Force.
+- **Animasi Loading (Bonus)**: UX yang halus dengan spinner saat proses autentikasi berlangsung.
+- **Fitur Logout**: Menghapus sesi secara aman dan mengarahkan kembali ke halaman login.
 
 ## 📋 Cara Menjalankan Project
 1. Clone repository ini.
@@ -22,13 +25,16 @@ Proyek ini adalah aplikasi web sederhana dengan fitur autentikasi login mengguna
 4. Buka `http://localhost:3000` di browser Anda.
 
 ## 📸 Preview UI
-![Desktop](./screenshots/dashboard_web.jpeg)
-![Desktop](./screenshots/login_web.jpeg)
-![Desktop](./screenshots/error_web.jpeg)
-![Mobile](./screenshots/dashboard_mobile.jpeg)
-![Mobile](./screenshots/login_mobile.jpeg)
+| Desktop Login | Mobile Login |
+|---|---|
+| ![Desktop](./screenshots/login_web.jpeg) | ![Mobile](./screenshots/login_mobile.jpeg) |
 
-**Akun Demo:**
+| Desktop Dashboard | Mobile Dashboard |
+|---|---|
+| ![Desktop](./screenshots/dashboard_web.jpeg) | ![Mobile](./screenshots/dashboard_mobile.jpeg) |
+
+## 🔑 Akun Demo
 - **Email:** admin@javis.com
 - **Password:** password123
 
+**Link Live Demo (Vercel):** [https://javis-web-challenge.vercel.app/login]
